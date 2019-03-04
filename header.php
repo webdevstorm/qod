@@ -21,16 +21,16 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 		
 			<header id="masthead" class="site-header" role="banner">
-			
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				</div><!-- .site-branding -->
 
 
-		<div class="qod-logo"> <img src=<?php echo get_template_directory_uri().'/images/qod-logo.svg'?>></div>
-			</header><!-- #masthead -->
+		<div class="qod-logo"><a href="<?php bloginfo('url'); ?>"> <img src=<?php echo get_template_directory_uri().'/images/qod-logo.svg'?>></a></div>
+	
+	</header><!-- #masthead -->
 			<section class="main-content">
 			<div id="content" class="site-content">
-			<button type="button" class="show-another-quote" id="show-another-quote">Show Me Another</button>
+			
 </section>

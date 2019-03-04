@@ -32,6 +32,7 @@ function qod_scripts() {
     wp_enqueue_script( 'jquery' );
    wp_enqueue_script( 'qod-scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array( 'jquery' ), false, true );
  wp_localize_script( 'qod-scripts', 'red_vars', array(
+     'home_url' =>esc_url_raw( home_url() ),
       'rest_url' => esc_url_raw( rest_url() ),
       'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
       'post_id' => get_the_ID()
@@ -72,3 +73,6 @@ function qod_quotes( $query )
 	}
 }
 add_action( 'pre_get_posts', 'qod_quotes', 1 );
+
+
+

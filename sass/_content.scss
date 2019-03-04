@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+
 .quote-left {
   color: $color__text-screen;
 }
@@ -10,6 +11,8 @@
   color: $color__text-screen;
   border: 3px solid $color__text-screen;
   background-color: $color__background-body;
+  display: flex;
+  justify-content: center;
 }
 .menu a {
   color: $color__text-screen;
@@ -43,9 +46,7 @@
   clear: both;
   margin: 0 0 $base__space-unit;
 }
-@media(min-width:1080px) {
-
+@media (min-width: 1080px) {
 }
-@media (min-width:600px) {
-
+@media (min-width: 600px) {
 }

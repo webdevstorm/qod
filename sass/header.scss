@@ -6,6 +6,11 @@
   justify-content: center;
   align-items: center;
 }
+.archive-stuff {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 .main-content {
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +19,16 @@
   justify-content: center;
   align-items: center;
 }
-.entry-content {
+.site-main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.entry-content.entry-title {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,6 +36,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .main-navigation {
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,5 +54,8 @@
   align-items: center;
 }
 .qod-logo img {
-  height: 150px;
+  height: 120px;
+}
+.categories {
+  list-style: none;
 }

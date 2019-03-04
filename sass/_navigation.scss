@@ -7,30 +7,31 @@
 .red-source {
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+}
+.quote-link a {
+  padding-left: 5px;
+  padding-bottom: 15px;
 }
 a {
+  text-decoration: none;
   color: $color__link;
-
   &:visited {
     color: $color__link-visited;
-  }
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color__link-hover;
+    text-decoration: none;
   }
   &:focus {
     outline: thin dotted;
   }
-  &:hover,
-  &:active {
-    outline: 0;
+  &:hover {
+    color: $color__link-hover;
   }
 }
 
 /* Menus */
 
 .main-navigation {
+  padding-left: 410px;
   clear: both;
   display: block;
   float: left;
@@ -48,7 +49,6 @@ a {
     }
 
     ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: $base__space-unit;
@@ -68,6 +68,9 @@ a {
       }
 
       a {
+        $color__link: #00cc00;
+        $color__link-visited: #00cc00;
+        $color__link-hover: #0b5c0b;
         display: flex;
         justify-content: space-between;
         width: 200px;
@@ -96,8 +99,8 @@ a {
     }
   }
   a {
-    display: block;
     text-decoration: none;
+    padding-left: 10px;
   }
 
   .current_page_item > a,

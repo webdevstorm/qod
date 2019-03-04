@@ -1,4 +1,8 @@
 (function($) {
+  let lastpage = '';
+  $(window).on('popstate', function() {
+    window.location.replace(lastPage);
+  });
   $('#show-another-quote').on('click', function(event) {
     console.log('click');
     event.preventDefault();
@@ -14,8 +18,16 @@
       }
     }).done(function(response) {
       console.log(response);
-      $('#new-quote').html(response[0].excerpt.rendered);
+      $('#new-quote').html(response[0].content.rendered);
       $('#author').html(response[0].title.rendered);
+      const url = api_vars.home_url + '/' + response[0].slug + '/';
+      history.pushState(null, null, url);
+      console.log(url);
+      // if (qod_quote_source[0] > 0) &&
+      // (qod_quote_source[0]  0)
+      // else (qod_quote_source[0] < 0) && (qod_quote_source[0] = 0) {
+
+      // }
     });
   });
 })(jQuery);
